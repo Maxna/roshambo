@@ -14,8 +14,10 @@ public class JunKenPo {
             result = "Player 2 Wins!";
         } else if (player1choice.equals("Rock") && player2choice.equals("Scissors") || player1choice.equals("Paper") && player2choice.equals("Rock") || player1choice.equals("Scissors") && player2choice.equals("Paper")){
             result = "Player 1 Wins!";
-        } else {
+        } else if (player1choice.equals(player2choice)){
             result = "Draw!";
+        } else {
+            result = "There was an incorrect input. Please try again.";
         }
         return result;
     }
